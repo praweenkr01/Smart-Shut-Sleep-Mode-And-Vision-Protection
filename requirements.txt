@@ -7,5 +7,4 @@ pyautogui==0.9.53
 pycaw==20220416
 screen_brightness_control==0.18.0
 streamlit==1.15.2
-pywin32==304
 wmi==1.5.1

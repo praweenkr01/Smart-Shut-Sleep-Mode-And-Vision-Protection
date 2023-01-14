@@ -6,6 +6,6 @@ pycaw==20220416
 pygame==2.1.2
 screen_brightness_control==0.18.0
 streamlit==1.15.2
-numpy
-opencv-python-headless
+numpy==1.22.3
+opencv_python==4.6.0.66
 black

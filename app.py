@@ -4,9 +4,9 @@ from faceDetectionModule import faceDetector
 import cv2
 import time
 import os
-from pygame import mixer
-mixer.init()
-sound=mixer.Sound("beep-21.wav")
+# from pygame import mixer
+# mixer.init()
+# sound=mixer.Sound("beep-21.wav")
 
 
 def func():
@@ -28,14 +28,15 @@ def func():
             prev_time=time.time()
 
             if detector.distance()<60:
-                sound.play()
+                print('\a')
+#                 sound.play()
         else:
             temp=time.time()-prev_time
             if temp>18:
                 os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
             elif temp>10:
-                print(temp)
-                sound.play()
+                print('\a')
+#                 sound.play()
 
 
         # cv2.waitKey(1)

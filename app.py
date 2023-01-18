@@ -18,6 +18,7 @@ def func():
     while z:
         if placeholder.button("Stops",key=counter):
             z=0
+        counter+=1
         success,img=cap.read()
         if not success:
             continue
@@ -41,7 +42,7 @@ def func():
 
 
         cv2.waitKey(1)
-        counter+=1
+        
         time.sleep(0.2)
     cap.release()
     cv2.destroyAllWindows()

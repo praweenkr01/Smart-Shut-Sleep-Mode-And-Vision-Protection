@@ -18,8 +18,9 @@ def func():
     while z:
         if placeholder.button("Stops",key=counter):
             z=0
-
         success,img=cap.read()
+        if not success:
+            continue
         detector.findFace(img)
 
 #         cv2.imshow('camera',detector.img)

@@ -39,7 +39,7 @@ def func():
 #                 sound.play()
 
 
-        cv2.waitKey(1)
+#         cv2.waitKey(1)
         counter+=1
         time.sleep(0.4)
     cap.release()

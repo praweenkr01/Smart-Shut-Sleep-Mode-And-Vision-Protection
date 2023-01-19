@@ -44,7 +44,7 @@ def func():
 
         cv2.waitKey(1)
         
-        time.sleep(0.2)
+        time.sleep(0.4)
     cap.release()
     cv2.destroyAllWindows()
 

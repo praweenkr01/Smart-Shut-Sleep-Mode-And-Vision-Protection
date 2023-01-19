@@ -21,8 +21,8 @@ def func():
             z=0
         counter+=1
         success,img=cap.read()
-        if not success:
-            continue
+#         if not success:
+#             continue
         detector.findFace(img)
 
 #         cv2.imshow('camera',detector.img)

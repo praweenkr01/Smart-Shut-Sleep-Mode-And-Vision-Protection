@@ -15,6 +15,7 @@ def func():
     detector=faceDetector()
     counter=0
     z=1
+    time.sleep(2)
     while z:
         if placeholder.button("Stops",key=counter):
             z=0

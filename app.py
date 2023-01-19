@@ -36,6 +36,7 @@ def func():
     while ret == False and z:
        if placeholder.button("Stops",key=counter):
             z=0
+       counter+=1
        cap.release()
        cap = cv2.VideoCapture(cmno)                                                                              
        ret, frame = cap.read()

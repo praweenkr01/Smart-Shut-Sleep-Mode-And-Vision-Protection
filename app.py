@@ -37,7 +37,7 @@ def func():
        if placeholder.button("Stops",key=counter):
             z=0
        cap.release()
-       cap = cv.VideoCapture(cmno)                                                                              
+       cap = cv2.VideoCapture(cmno)                                                                              
        ret, frame = cap.read()
     
     

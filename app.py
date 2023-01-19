@@ -33,8 +33,9 @@ def func():
     
     #check if camera working or not
     ret, frame = cap.read()
-    while ret == False:
-#        print("Can't receive frame. Retrying ...")
+    while ret == False and z:
+       if placeholder.button("Stops",key=counter):
+            z=0
        cap.release()
        cap = cv.VideoCapture(cmno)                                                                              
        ret, frame = cap.read()

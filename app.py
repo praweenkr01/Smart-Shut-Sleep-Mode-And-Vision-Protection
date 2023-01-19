@@ -4,18 +4,43 @@ from faceDetectionModule import faceDetector
 import cv2
 import time
 import os
+
+'''this was for the beep sound'''
 # from pygame import mixer
 # mixer.init()
 # sound=mixer.Sound("beep-21.wav")
 
 
+#choosing camera...
+cmno=0
+for i in range(0, 5):
+    cap = cv2.VideoCapture(i)
+    is_camera = cap.isOpened()
+    if is_camera:
+        cmno=i
+        cap.release()
+        time.sleep(1)
+        break
+
 def func():
     prev_time=time.time()
-    cap=cv2.VideoCapture(0)
+    cap=cv2.VideoCapture(cmno)
     detector=faceDetector()
     counter=0
     z=1
-    time.sleep(2)
+    
+    
+    
+    #check if camera working or not
+    ret, frame = cap.read()
+    while ret == False:
+#        print("Can't receive frame. Retrying ...")
+       cap.release()
+       cap = cv.VideoCapture(cmno)                                                                              
+       ret, frame = cap.read()
+    
+    
+    
     while z:
         if placeholder.button("Stops",key=counter):
             z=0
@@ -43,8 +68,8 @@ def func():
 
 
         cv2.waitKey(1)
-        
         time.sleep(0.4)
+        
     cap.release()
     cv2.destroyAllWindows()
 

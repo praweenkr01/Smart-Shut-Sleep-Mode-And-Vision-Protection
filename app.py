@@ -58,14 +58,16 @@ def func():
             prev_time=time.time()
 
             if detector.distance()<60:
-                print('\a')
+                winsound.Beep(700, 400)
+#                 print('\a')
 #                 sound.play()
         else:
             temp=time.time()-prev_time
             if temp>18:
                 os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
             elif temp>10:
-                print('\a')
+                winsound.Beep(400, 400)
+#                 print('\a')
 #                 sound.play()
 
 

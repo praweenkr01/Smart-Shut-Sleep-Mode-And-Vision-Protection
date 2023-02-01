@@ -1,5 +1,5 @@
 import streamlit as st
-# import winsound
+import winsound
 from faceDetectionModule import faceDetector
 import cv2
 import time

@@ -82,6 +82,7 @@ def func():
 
 
 
+#I will change this title as well later once i'm done with code
 st.title('Vision protector 2.0')
 
 if st.button('Starts'):

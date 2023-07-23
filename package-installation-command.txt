@@ -1,0 +1,10 @@
+python.exe -m pip install --upgrade pip
+pip install streamlit
+pip install opencv-python
+pip install cvzone
+pip install mediapipe
+pip install msvc-runtime
+
+
+#to run the app
+streamlit run app.py

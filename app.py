@@ -5,13 +5,15 @@ import cv2
 import time
 import os
 
-'''this was for the beep sound'''
+'''
+this was for the beep sound
 # from pygame import mixer
 # mixer.init()
 # sound=mixer.Sound("beep-21.wav")
-
+'''
 
 #choosing camera...
+
 cmno=0
 for i in range(0, 5):
     cap = cv2.VideoCapture(i)

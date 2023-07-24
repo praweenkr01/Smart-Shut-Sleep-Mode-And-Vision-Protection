@@ -1,7 +1,10 @@
+# import packages and module required
 import cv2
 import cvzone
 from cvzone.FaceMeshModule import FaceMeshDetector
 
+
+# blue print to check if face is present or not
 class faceDetector():
 
     def __init__(self):

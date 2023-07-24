@@ -8,15 +8,13 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="main">
         <div id="eye">
             <h1>VISION PROTECTOR</h1>
-            <span >Source Code</span> 
-        <span ><button style="height:30px; width:110px; background-color: rgb(8, 56, 80);"><a href="https://github.com/praweenkr01/vision-protector" style="text-decoration: none; color: aliceblue;"><b>GitHub Link</b> </a></button></span>
+            Source Code : <button><a href="https://github.com/praweenkr01/vision-protector"><b>GitHub Link</b> </a></button>
         </div>
            
         <div class="same">
-             <div class="header"><h2>INTRODUCTION</h2></div>
+            <div class="title"><h2>INTRODUCTION</h2></div>
             <p class="content">The main concept behind the Vision Protector using Arduino project is to keep the
                 chidren at safe distance from tv screen. I have used Ultrasonic Sensor for detection of
                 children or adult one when they come near to tv-screen, we have used servo motor on
@@ -25,16 +23,16 @@
                 two simiar design of radar sysytem has been instaled whenever the radar at top detect
                 something most probably the adult and mature person is near the tv-screen so no beep
                 sound is made but if only lower radar sysytem detect any thing then that may be children
-                so beep sound till he/she goes back</p>
+                so beep sound till he/she goes back.</p>
         </div>
         <div class="same">
-            <div class="header"><h2>PREVIEW</h2></div>
+            <div class="title"><h2>PREVIEW</h2></div>
             <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aPeEP9KY0Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/aPeEP9KY0Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="same">
-            <div class="header"><h2>PROBLEM STATEMENT</h2></div>
+            <div class="title"><h2>PROBLEM STATEMENT</h2></div>
             <p class="content">Many parents struggle to impose healthy limits on themselves so how can we expect they
                 care well about their children. The average adult spends over 11 hours per day behind a
                 screen, according to the Kaiser Family Foundation. Although many parents use TV to
@@ -45,10 +43,10 @@
                 Hence, such a system has to be build which can eradicate this problem or at least reduce
                 it to the minimum level. This project gives us one of the most efficient ways to keep
                 children at safe distance from tv-screen. By using this vision protector we atleast insure
-                that children is not watching tv from much nearer to screen</p>
+                that children is not watching tv from much nearer to screen.</p>
         </div>
         <div class="same">
-            <div class="header"><h2>OBJECTIVES</h2></div>
+            <div class="title"><h2>OBJECTIVES</h2></div>
             <p class="content">As we always hear prevention and protection is better than cure so, the main objective of
                 this project is to maintain a safe distance from tv-screen so as to protect our eye and
                 prevent loss or blur of eye sight. Nowadays people are busy in their works and they forgot
@@ -58,10 +56,10 @@
                 Arduino Uno controller is used to read the presense of childrenwith the help of Ultrasonic
                 sensor. After detecting the children the buzzer makes noise till the time child is near the
                 screen . Arduino Nano used has Atmega328p-pu old version IC. . Embedded C is used to
-                program the controller</p>
+                program the controller.</p>
         </div>
         <div class="same">
-            <div class="header"><h2>WORKING</h2></div>
+            <div class="title"><h2>WORKING</h2></div>
             <p class="content">After setting up the Vision Protector and making all the necessary connections, upload the
                 code to Arduino and provide 5V power supply to the circuit. Once the system is powered
                 ON, Arduino keeps monitoring for any object near the Ultrasonic Sensor If the Ultrasonic
@@ -69,12 +67,12 @@
                 nothing is detected then Arduino will activate the buzzer and will start to make beep
                 sound till the time the object is within the range. else if upper level ultrasonic sensor also
                 detect anything then normal function will continue and no beep sound or any disturbance
-                made as the height is higher and detected one can’t be child.
+                made as the height is higher and detected one can't be child.
                 </p>
         </div>
         <div class="same">
-            <div class="header"><h2>COMPONENTS</h2></div>
-            <ul class="content" style="list-style-type:none;">
+            <div class="title"><h2>COMPONENTS</h2></div>
+            <ul class="content" style="list-style:circle;">
                 <li>Arduino Board</li>
                 <li>Ultrasonic Sensor</li>
                 <li>Servo Motor</li>
@@ -83,35 +81,34 @@
             </ul>
         </div>
         <div class="same">
-            <div class="header"><h2>RESULTS</h2></div>
+            <div class="title"><h2>RESULTS</h2></div>
             <p class="content">Whenever the child of height less than lower level set by us comes in range of tv-screen
                 that we have sat the disturbance is created and will contunue making beep sound till the
                 time the child is there and beep sound stop once the child went back and moves out of
                 range that we set. Now if a person with min height the upper level of ultrasonic sensor set
-                up comes in range than we won’t observe any beep sound or disturbance .as the creteria
+                up comes in range than we won't observe any beep sound or disturbance .as the creteria
                 that we used here to distinguish between adult and child is height.
                 we also thought of first prviding warning by blinking led and then turning off the tv if no
                 montion detected for certain time but unfortunity due to malfunctionong of PIR sensor we
                 had to drop that functionality.</p>
         </div>
         <div class="same">
-            <div class="header"><h2>CONSTRAINTS</h2></div>
-            <ul class="content" style="list-style-type:none;">
-                <li>Continuously power supply/using battery</li>
-                <li> Malfunctioning of electronics components</li>
-                <li>Currently no AI,for proper detection children and there is also edge
-                    condition like putting paper on upper level ultrasonic sensor as one of them.</li>
+            <div class="title"><h2>CONSTRAINTS</h2></div>
+            <ul class="content">
+                <li>Continuously power supply is necessary(here using battery).</li>
+                <li> Malfunctioning of electronic components.</li>
+                <li>Currently no AI,for proper detection of children.</li>
+                <li>Edge cases like putting paper on upper level ultrasonic sensor.</li>
             </ul>
         </div>
         <div class="same">
-            <div class="header"><h2>FUTURE WORK</h2></div>
+            <div class="title"><h2>FUTURE WORK</h2></div>
             <p class="content">The AIoT fusion to enable devices to learn, reason, and process information like humans
                 so that proper detection of children and also to off tv to save power if there is no one in
                 the room.
                 Add more function to provide variety of features like sending proper data like for how
                 much time child had watched tv and turning off tv after certain limit and many more
-                related functionality</p>
+                related functionality.</p>
         </div>
-    </div>
 </body>
 </html>

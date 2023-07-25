@@ -31,4 +31,4 @@ If the person is working or sitting infront of the system, the system won’t go
 
 **Click the link below to view the ```earlier idea and implementaion``` of the same project as  ```Hardware Embedded System Project```.**<br>
 <br>
-[```EMBEDDED SYSTEM BASED VISION PROTECTOR```](https://praweenkr01.github.io/vision-protector/)
+[```EMBEDDED SYSTEM BASED VISION PROTECTOR```](https://praweenkr01.github.io/Smart-Shut-Sleep-Mode-And-Vision-Protection/)

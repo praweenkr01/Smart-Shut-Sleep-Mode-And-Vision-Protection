@@ -1,7 +1,6 @@
 # import packages and module required
 import cv2
-import cvzone
-from cvzone.FaceMeshModule import FaceMeshDetector
+from FaceMeshModule import FaceMeshDetector
 
 
 # blue print to check if face is present or not
@@ -43,8 +42,6 @@ class faceDetector():
             f=840
             d=(W*f)/w
             # print(d)
-
-            cvzone.putTextRect(self.img,f'distance: {int(d)}cm',(face[10][0]-100,face[10][1]-50),scale=2)
             return d
         else:
             return float('inf')
